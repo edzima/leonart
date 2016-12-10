@@ -8251,8 +8251,8 @@ body:not(.device-touch) .button.button-full strong {
 .i-circled,
 .i-bordered,
 .social-icon {
-	display: block;
-	float: left;
+	display: inline-block;
+
 	margin: 4px 11px 7px 0;
 	text-align: center !important;
 	font-size: 28px;
@@ -11916,6 +11916,10 @@ button.toast-close-button {
 	border-top: 5px solid rgba(0,0,0,0.2);
 }
 
+#footer .social {
+	text-align: center;
+}
+
 .device-lg.sticky-footer #top-bar,
 .device-md.sticky-footer #top-bar { z-index: 299; }
 
@@ -13608,4 +13612,3 @@ body:not(.no-transition) #wrapper,
 	margin:0!important;
 	padding:0!important
 }
-
