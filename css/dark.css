@@ -947,7 +947,7 @@ body.top-search-open .dark #header-wrap:not(.not-dark) #top-search a,
 .dark .title-block > span { color: #999; }
 
 .dark .heading-block:not(.not-dark),
-.dark .counter { text-shadow: 1px 1px 1px rgba(0,0,0,0.1); }
+.dark .counter { text-shadow: 1px 1px 1px rgba(0,0,0,0.3); }
 
 .dark .heading-block:not(.not-dark) h1,
 .dark .heading-block:not(.not-dark) h2,
@@ -963,7 +963,7 @@ body.top-search-open .dark #header-wrap:not(.not-dark) #top-search a,
 .dark .emphasis-title.not-dark h1,
 .dark .emphasis-title.not-dark h2 { color: #333; }
 
-.dark .heading-block:not(.not-dark) > span { color: #EEE; }
+.dark .heading-block:not(.not-dark) > span { color: #ffffff; }
 
 .dark .emphasis-title.not-dark { color: #444; }
 
@@ -1022,15 +1022,17 @@ body.top-search-open .dark #header-wrap:not(.not-dark) #top-search a,
 
 #footer.dark,
 .dark #footer {
-	background-color: #333;
+	background-color: rgba(0,0,0,0.0);
 	color: #CCC;
 	border-top-color: rgba(0,0,0,0.2);
+	width:100%;
 }
 
 .dark #copyrights {
-	background-color: rgba(0,0,0,0.2);
-	color: rgba(255,255,255,0.25);
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+	background-color: rgba(0,0,0,0.0);
+	color: rgba(255,255,255,0.9);
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+	
 }
 
 .dark #copyrights i.footer-icon { color: rgba(255,255,255,0.3); }

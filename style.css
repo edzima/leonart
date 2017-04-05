@@ -1127,7 +1127,7 @@ body.stretched #header.full-header .container {
 	display: block;
 	line-height: 22px;
 	padding: 39px 15px;
-	color: #444;
+	color: #ffffff;
 	font-weight: bold;
 	font-size: 13px;
 	letter-spacing: 1px;
@@ -1156,7 +1156,7 @@ body.stretched #header.full-header .container {
 }
 
 #primary-menu ul li:hover > a,
-#primary-menu ul li.current > a { color: #1ABC9C; }
+#primary-menu ul li.current > a { color: #46CCFE ; }
 
 #primary-menu > ul > li.sub-menu > a > div { }
 
@@ -1171,7 +1171,7 @@ body.no-superfish #primary-menu li:hover > .mega-menu-content { display: block; 
 	background-color: #FFF;
 	box-shadow: 0px 13px 42px 11px rgba(0, 0, 0, 0.05);
 	border: 1px solid #EEE;
-	border-top: 2px solid #1ABC9C;
+	border-top: 2px solid #46CCFE ;
 	height: auto;
 	z-index: 199;
 	top: 100%;
@@ -3379,7 +3379,7 @@ body.stretched .container-fullwidth .breadcrumb { right: 60px !important; }
 
 #page-title.page-title-dark h1 { color: rgba(255,255,255,0.9) !important; }
 
-#page-title.page-title-dark span { color: rgba(255,255,255,0.7); }
+#page-title.page-title-dark span { color: rgba(226,43,70,1.0); }
 
 #page-title.page-title-dark .breadcrumb > .active { color: rgba(255,255,255,0.6); }
 
@@ -11151,7 +11151,6 @@ input[type=checkbox]:not(:checked) + label.error { display: block !important; }
 .emphasis-title h2 {
 	margin-bottom: 0;
 	font-weight: 700;
-	text-transform: uppercase;
 	letter-spacing: 1px;
 	color: #333;
 }
@@ -11163,9 +11162,9 @@ input[type=checkbox]:not(:checked) + label.error { display: block !important; }
 	text-transform: none;
 }
 
-.heading-block h1 { font-size: 32px; }
+.heading-block h1 { font-size: 48px; }
 
-.heading-block h2 { font-size: 30px; }
+.heading-block h2 { font-size: 32px; }
 
 .heading-block h3 { font-size: 26px; }
 
@@ -11178,7 +11177,7 @@ input[type=checkbox]:not(:checked) + label.error { display: block !important; }
 	display: block;
 	margin-top: 10px;
 	font-weight: 300;
-	color: #777;
+	color: #ffffff;
 }
 
 .heading-block .before-heading { margin-bottom: 7px; }
@@ -11191,7 +11190,7 @@ input[type=checkbox]:not(:checked) + label.error { display: block !important; }
 	margin-right: auto;
 }
 
-.heading-block h1 + span { font-size: 24px; }
+.heading-block h1 + span { font-size: 22px; }
 
 .heading-block h2 + span { font-size: 22px; }
 
@@ -11911,9 +11910,11 @@ button.toast-close-button {
 
 
 #footer {
-	position: relative;
-	background-color: #EEE;
-	border-top: 5px solid rgba(0,0,0,0.2);
+	position: absolute;
+	bottom:0;
+	width:100%
+	
+	
 }
 
 #footer .social {
@@ -11977,9 +11978,9 @@ button.toast-close-button {
 
 #copyrights {
 	padding: 40px 0;
-	background-color: #DDD;
 	font-size: 14px;
 	line-height: 1.8;
+
 }
 
 #copyrights i.footer-icon {
