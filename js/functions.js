@@ -1367,6 +1367,7 @@ var SEMICOLON = SEMICOLON || {};
 				if( defaultMobileLogo ){ defaultLogo.find('img').attr('src', defaultMobileLogo); }
 				if( retinaMobileLogo ){ retinaLogo.find('img').attr('src', retinaMobileLogo); }
 			}
+
 		},
 
 		stickyMenuClass: function(){
@@ -3684,5 +3685,61 @@ var SEMICOLON = SEMICOLON || {};
 	$(document).ready( SEMICOLON.documentOnReady.init );
 	$window.load( SEMICOLON.documentOnLoad.init );
 	$window.on( 'resize', SEMICOLON.documentOnResize.init );
+
+/*
+    $('.standard-logo img').hover(function() {
+      $(this).attr('src', '/ico/view1.png');
+    }, function() {
+      $(this).attr('src', '/ico/view.png');
+    });
+*/
+
+var $logo  = $(".standard-logo img");
+
+$header.mouseover(function(){
+     $logo.fadeOut( "fast", function() {
+        $logo.attr("src", getLogoSrc(1));
+        $logo.fadeIn('fast');
+     });
+ });
+
+ $header.mouseout(function(){
+    $logo.fadeOut( "fast", function() {
+        $logo.attr("src", getLogoSrc(0));
+        $logo.fadeIn('fast');
+    });
+
+ });
+
+
+
+ function getLogoSrc(isSlide){
+     var headerClass = $("#header").attr("class");
+
+     if (isSlide)    var src = "images/logoslide.png";
+     else var src = "images/logo.png";
+
+     if(headerClass.indexOf("dark") >= 0) {
+        src = "images/logo-dark.png"
+        if(isSlide) src = "images/logo-dark slide.png";
+
+     }
+
+     return src;
+ }
+
+ var colors = ["red", "black", "blue","yellow"];
+ $("#js-rotating").Morphext({
+    // The [in] animation type. Refer to Animate.css for a list of available animations.
+    animation: "bounceIn",
+    // An array of phrases to rotate are created based on this separator. Change it if you wish to separate the phrases differently (e.g. So Simple | Very Doge | Much Wow | Such Cool).
+    separator: ",",
+    // The delay between the changing of each phrase in milliseconds.
+    speed: 2000,
+    complete: function () {
+        $("#js-rotating").css("color",colors[this.index]);
+    }
+});
+
 
 })(jQuery);
